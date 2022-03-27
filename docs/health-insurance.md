@@ -455,6 +455,7 @@ the function needs to be passed one tree, of limited complexity (i.e. max_depth=
 
 ```python
 {% raw %}
+
 from IPython.core.display import display
 import re
 from sklearn.tree import export_graphviz
@@ -471,7 +472,9 @@ def draw_tree(t, df, size=10, ratio=0.6, precision=0):
                       special_characters=True, rotate=True, precision=precision)
     display(graphviz.Source(re.sub('Tree {',
        f'Tree {{ size={size}; ratio={ratio}', s)))
+
 {% endraw %}
+
 ```
 
 
