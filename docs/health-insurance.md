@@ -1,3 +1,10 @@
+---
+layout: default
+title: Health Insurance notebook
+nav_order: 2
+has_children: false
+---
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
