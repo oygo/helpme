@@ -1,14 +1,8 @@
 ---
-has_children: true 
+has_children: true
+title: Pandas
 ---
 
----
-layout: default
-title: Pandas
-nav_order: 2
-has_children: true
-permalink: /helpme/pandas
----
 
 Pandas
 

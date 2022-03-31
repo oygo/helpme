@@ -1,4 +1,5 @@
 ---
+title: 'Health Insurance Example'
 ---
 
 ```python
