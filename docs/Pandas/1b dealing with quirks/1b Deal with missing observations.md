@@ -1,5 +1,5 @@
 ---
-parent: Dealing with quirks 
+parent: 1b Dealing with quirks 
 title: Deal with missing observations
 nav_order: 1b
 ---
