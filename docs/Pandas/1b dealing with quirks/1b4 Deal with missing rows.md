@@ -1,5 +1,6 @@
 ---
 parent: Dealing with quirks
+grandparent: Pandas
 title: Deal with missing rows
 nav_order: 5
 ---

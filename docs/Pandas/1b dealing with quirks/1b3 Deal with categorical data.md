@@ -1,5 +1,6 @@
 ---
-parent: Dealing with quirks 
+parent: Dealing with quirks
+grandparent: Pandas 
 title: Deal with categorical data
 nav_order: 1b3
 ---
