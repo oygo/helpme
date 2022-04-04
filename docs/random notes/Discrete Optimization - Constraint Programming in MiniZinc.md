@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: Optimization - Constraint Programming in MiniZinc 
+navorder: Discrete 
 ---
 
 

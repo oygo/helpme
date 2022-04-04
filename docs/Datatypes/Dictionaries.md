@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title: Dictionaries 
+navorder: Dictionarie 
 ---
 
 A very nice general overview:

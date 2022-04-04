@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: - Building a website with Jekyll and Jupyter Notebooks 
+navorder: Website 
 ---
 
 #### The goal

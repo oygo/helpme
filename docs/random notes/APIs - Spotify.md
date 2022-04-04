@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: - Spotify 
+navorder: APIs 
 ---
 
 #### Motivating problem/example/post:

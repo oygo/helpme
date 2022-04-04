@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title: - split into different parts 
+navorder: Strings 
 ---
 
 

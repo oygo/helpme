@@ -1,5 +1,7 @@
 ---
 parent: Pandas 
+title: Describe and explore dataset 
+navorder: 1 
 ---
 
 ``df.info()`` displays size of dataset (MB, # rows, # cols)

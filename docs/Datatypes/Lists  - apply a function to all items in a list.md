@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title:  - apply a function to all items in a list 
+navorder: Lists 
 ---
 
 In order to apply a function to all elements in a list, use a list comprehension.  

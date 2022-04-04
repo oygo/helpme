@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title: - enumerate 
+navorder: Lists 
 ---
 
 #python

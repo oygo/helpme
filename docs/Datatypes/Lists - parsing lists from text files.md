@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title: - parsing lists from text files 
+navorder: Lists 
 ---
 
 #python #lists #wrangling #loading

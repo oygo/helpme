@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: Resources 
+navorder: Resource 
 ---
 
 This book looks great:

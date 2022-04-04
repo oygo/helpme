@@ -1,5 +1,7 @@
 ---
 parent: Pandas 
+title: Select observations 
+navorder: 1c 
 ---
 
 Indexing

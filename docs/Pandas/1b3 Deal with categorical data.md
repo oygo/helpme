@@ -1,5 +1,7 @@
 ---
 parent: Pandas 
+title: Deal with categorical data 
+navorder: 1b3 
 ---
 
 

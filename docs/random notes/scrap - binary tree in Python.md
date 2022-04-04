@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: - binary tree in Python 
+navorder: scrap 
 ---
 
 

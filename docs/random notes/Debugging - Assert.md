@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: - Assert 
+navorder: Debugging 
 ---
 
 #python 

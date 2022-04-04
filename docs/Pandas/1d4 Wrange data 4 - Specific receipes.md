@@ -1,5 +1,7 @@
 ---
 parent: Pandas 
+title: Wrange data 4 - Specific receipes 
+navorder: 1d4 
 ---
 
 ### Undo one-hot enodings

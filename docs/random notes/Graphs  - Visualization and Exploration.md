@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title:  - Visualization and Exploration 
+navorder: Graphs 
 ---
 
 working with graphs in Python: NetworkX

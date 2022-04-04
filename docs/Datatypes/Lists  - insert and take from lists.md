@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title:  - insert and take from lists 
+navorder: Lists 
 ---
 
 Inserting and taking from lists

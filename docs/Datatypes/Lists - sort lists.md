@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title: - sort lists 
+navorder: Lists 
 ---
 
 #python #lists 

@@ -1,5 +1,7 @@
 ---
 parent: random notes 
+title: - check multiple conditions 
+navorder: Conditions 
 ---
 
 Sometimes we want to check that multiple conditions hold 

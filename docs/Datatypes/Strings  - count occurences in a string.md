@@ -1,5 +1,7 @@
 ---
 parent: Datatypes 
+title:  - count occurences in a string 
+navorder: Strings 
 ---
 
 use count() to count the number of times an element (e.g. a letter) occurs in a string:
