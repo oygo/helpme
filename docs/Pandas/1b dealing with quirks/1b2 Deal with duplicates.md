@@ -1,5 +1,5 @@
 ---
 parent: Dealing with quirks
 title: Deal with duplicates
-nav_order: 1b2
+nav_order: 1
 ---

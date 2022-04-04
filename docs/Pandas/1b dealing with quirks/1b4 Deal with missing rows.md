@@ -1,7 +1,7 @@
 ---
-parent: Dealing with quirks 
+parent: Dealing with quirks
 title: Deal with missing rows
-nav_order: 1b4
+nav_order: 5
 ---
 
 - for some features, a row-complete dataset is required (i.e.) that has a row for every time and location.
