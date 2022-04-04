@@ -4,13 +4,7 @@ title: Pandas
 nav_order: Panda 
 ---
 
----
-layout: default
-title: Pandas
-nav_order: 2
-has_children: true
-permalink: /helpme/pandas
----
+
 
 Pandas
 
