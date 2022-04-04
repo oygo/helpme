@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Select observations 
-navorder: 1c 
+nav_order: 1c 
 ---
 
 Indexing

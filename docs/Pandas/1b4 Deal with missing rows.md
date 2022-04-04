@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Deal with missing rows 
-navorder: 1b4 
+nav_order: 1b4 
 ---
 
 - for some features, a row-complete dataset is required (i.e.) that has a row for every time and location.

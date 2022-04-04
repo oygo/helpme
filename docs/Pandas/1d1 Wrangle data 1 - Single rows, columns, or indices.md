@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Wrangle data 1 - Single rows, columns, or indices 
-navorder: 1d1 
+nav_order: 1d1 
 ---
 
 # Columns

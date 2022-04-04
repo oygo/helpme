@@ -1,7 +1,7 @@
 ---
 parent: Machine Learning 
 title: index 
-navorder: inde 
+nav_order: inde 
 ---
 
 

@@ -2,7 +2,7 @@
 has_children: true 
 parent: Pandas 
 title: Load data 
-navorder: 0 
+nav_order: 0 
 ---
 
 # Load data into Pandas

@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Deal with categorical data 
-navorder: 1b3 
+nav_order: 1b3 
 ---
 
 

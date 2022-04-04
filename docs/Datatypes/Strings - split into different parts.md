@@ -1,7 +1,7 @@
 ---
 parent: Datatypes 
 title: - split into different parts 
-navorder: Strings 
+nav_order: Strings 
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Plot data 
-navorder: 1e 
+nav_order: 1e 
 ---
 
 For exploration

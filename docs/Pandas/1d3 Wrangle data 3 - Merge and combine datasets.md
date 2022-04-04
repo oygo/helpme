@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Wrangle data 3 - Merge and combine datasets 
-navorder: 1d3 
+nav_order: 1d3 
 ---
 
 ### append: [pd.concat](https://pandas.pydata.org/docs/user_guide/merging.html#concatenating-objects)

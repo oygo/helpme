@@ -1,6 +1,6 @@
 ---
-title: health-insurance.ipynb
-navorder: health-insurance.ipyn
+title: health-insurance.ipynb 
+nav_order: health-insurance.ipyn 
 ---
 
 ```python
@@ -19,12 +19,12 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
 
-# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All"
+# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 ```
 
     /kaggle/input/healthinsurance/Health_insurance.csv
-
+    
 
 ## 0. Helper functions
 
@@ -46,11 +46,11 @@ def train_cats(df, max_card=0, dep_var=None):
     """
     for n,c in df.items(): # n is the name of the column, c is the series
         if n == dep_var: continue
-        if pd.api.types.is_string_dtype(df[n]) or (pd.api.types.is_integer_dtype(df[n]) and df[n].unique().shape[0] <= max_card):
+        if pd.api.types.is_string_dtype(df[n]) or (pd.api.types.is_integer_dtype(df[n]) and df[n].unique().shape[0] <= max_card): 
             df[n] = df[n].astype('category').cat.as_ordered()
 
 def apply_cats(df, trn):
-    """
+    """ 
     Transforms the test set to have the same categorical variables (and category codes) as the training set.
     Output: a dataset, in which all string variables (and - if max_card is used - integers with a cardinality <= max_card) have been turned into categories.
     Categorical variables still need to be turned into numbers before feeding the data to a model.
@@ -59,7 +59,7 @@ def apply_cats(df, trn):
         if (n in trn.columns) and (trn[n].dtype.name=='category'):
             df[n] = c.astype('category').cat.as_ordered()
             df[n] = df[n].cat.set_categories(trn[n].cat.categories, ordered=True)
-
+            
 # Dealing with categorical variables II: just before sending the data to the model            
 def numericalise_cats(df):
     """
@@ -77,7 +77,7 @@ def numericalise_cats(df):
             # transform the categorical variable into a numerical variable
             df[c] = df[c].cat.codes
     return dictionary
-
+    
 # Dealing with categorical variables: helper function
     # just print out lists: which variables are categorical and which ones are not
     # use cont_cat_split(df_train, max_card=0, dep_var='Target') from the fastai.tabular.all Class
@@ -86,7 +86,7 @@ def numericalise_cats(df):
 
 ## DATES
 # Deal with dates
-  #  use add_datepart() from the fastai.Tabular class.
+  #  use add_datepart() from the fastai.Tabular class. 
   #  by default add_datepart() also removes the data column, so it does not need to be removed before passing it onto the model
 # to add for future use: add_datepart() does not deal with missings https://stackoverflow.com/questions/43889611/median-of-panda-datetime64-column
 
@@ -97,7 +97,7 @@ def numericalise_cats(df):
 def train_missings(df):
     """
     For each NUMERICAL variable with missing values, creates a column to indicate observations which had a missing value in this column.
-    Then fills in the missing values with the column median.
+    Then fills in the missing values with the column median. 
     Returns a dictionary with an entry for each column that had a missing, indicating the value which was filled in.
     """
     #  create an indicator when the column has missing values
@@ -109,7 +109,7 @@ def train_missings(df):
             df[col].fillna(df[col].median(),inplace=True) # fill in with median
             nas[col] = df[col].median() # add to the dictionary of filled in values
     return nas
-    #  fill with the median
+    #  fill with the median 
     #  return a dictionary of (1) the variables where missing values where filled and (2) the value which was filled in
   # as features:
     #  only create the indicator when a variable is missing and return a list of the columns which have missing values
@@ -123,10 +123,10 @@ def apply_missings(df, trn_dict, fill_other_missings=False):
         # optional: if there are remaining variables which have missing values, then fill them with the median (without creating a missing variable)
     """
     For each variable in the dictionary, creates a column to indicate observations which had a missing value in this column.
-    Then fills in the missing values with the value from the dictionary.
+    Then fills in the missing values with the value from the dictionary. 
     If fill_other_missings=True, then also fills in all other missing values (with the median of the dataset), but without creating an additional column.
-    """
-    for col, na_value in trn_dict.items():
+    """ 
+    for col, na_value in trn_dict.items(): 
         df[str(col)+'_isna'] = df[col].isnull().astype(int) # create an indicator variable (equal 1 if the value is missing for the given observation)
         df[col].fillna(na_value,inplace=True) # fill in missings with the value from the dictionary (change na_value to df[col].median() to fill in the median instead)
     if fill_other_missings==True:
@@ -175,7 +175,7 @@ m.score(df_train.drop(['charges'], axis=1), df_train.charges)
 
     CPU times: user 510 ms, sys: 43.6 ms, total: 553 ms
     Wall time: 361 ms
-
+    
 
 
 
@@ -209,7 +209,7 @@ X_val = df_val.drop(['charges'], axis=1)
 y_val = df_val['charges']
 
 # 2ND APPROACH: USING SKLEARN
-#from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split 
 #X_tra, X_val, y_tra, y_val = train_test_split(df_train.drop(['charges'], axis=1), df_train.charges, test_size=0.2, random_state=42)
 ```
 
@@ -228,7 +228,7 @@ y_val = df_val['charges']
     dtypes: float64(2), int64(2), int8(3)
     memory usage: 45.9 KB
     None
-
+    
 
 
 ```python
@@ -240,7 +240,7 @@ print_score(m) # we are overfitting badly: there is quite a difference between t
 ```
 
     [0.9757428394516634, 0.8486700300564454]
-
+    
 
 
 ```python
@@ -341,9 +341,9 @@ plt.plot([metrics.r2_score(y_val, np.mean(preds[:i+1], axis=0)) for i in range(1
 ```
 
 
-
+    
 ![png](health-insurance.ipynb-files/output_18_0.png)
-
+    
 
 
 ##### 1.3.b Now do the tuning properly: GridSearch and Randomized Search
@@ -413,7 +413,7 @@ print_score(rf_random)
 
     {'n_estimators': 89, 'min_samples_split': 15, 'min_samples_leaf': 15, 'max_features': 'auto', 'max_depth': None, 'bootstrap': True}
     [0.8799375454587466, 0.8998586420974982]
-
+    
 
 
 ```python
@@ -448,7 +448,7 @@ print_score(rf_random)
 
     {'bootstrap': True, 'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 15, 'min_samples_split': 20, 'n_estimators': 34}
     [0.8801420527414978, 0.9002751059128307]
-
+    
 
 ## 2. Interpreting the random forest, part I (plotting trees)
 
@@ -461,11 +461,12 @@ the function needs to be passed one tree, of limited complexity (i.e. max_depth=
 
 
 ```python
+{% raw %}
 from IPython.core.display import display
 import re
 from sklearn.tree import export_graphviz
-import graphviz
-{% raw %}
+import graphviz 
+
 def draw_tree(t, df, size=10, ratio=0.6, precision=0):
     """ Draws a representation of a random forest in IPython.
     Parameters:
@@ -489,9 +490,9 @@ draw_tree(m2.estimators_[4], df_tra.drop(['charges'], axis=1), precision=3)
 ```
 
 
-
+    
 ![svg](health-insurance.ipynb-files/output_29_0.svg)
-
+    
 
 
 I can use the dictionary translation (created by numericalise_cats()) to look up what the categorical variables mean
@@ -521,7 +522,7 @@ list(zip(m2.feature_importances_, df_tra.drop(['charges'], axis=1).columns))
 ```
 
     0.8872172169046386
-
+    
 
 
 
@@ -539,28 +540,28 @@ list(zip(m2.feature_importances_, df_tra.drop(['charges'], axis=1).columns))
 
 
 ```python
-from sklearn import tree
+from sklearn import tree 
 from sklearn.datasets import load_iris
 
 m2 = RandomForestRegressor(n_estimators=10, max_depth=4, bootstrap=True, n_jobs=-1)
 m2.fit(df_tra.drop(['charges'], axis=1), df_tra.charges)
 
-dot_data = tree.export_graphviz(m2.estimators_[0], out_file=None,
+dot_data = tree.export_graphviz(m2.estimators_[0], out_file=None, 
                                 feature_names=df_tra.drop(['charges'], axis=1).columns,  
                                 filled=True, rounded=True,  
                                 special_characters=True)  
 graph = graphviz.Source(dot_data)  
 
-graph
+graph 
 # graph.render("iris")  run this to export this as a PDF file
 ```
 
 
 
 
-
+    
 ![svg](health-insurance.ipynb-files/output_34_0.svg)
-
+    
 
 
 
@@ -578,24 +579,24 @@ clf = clf.fit(X, y)
 
 
 ```python
-import graphviz
-dot_data = tree.export_graphviz(clf, out_file=None,
+import graphviz 
+dot_data = tree.export_graphviz(clf, out_file=None, 
                                 feature_names=iris.feature_names,  
                                 class_names=iris.target_names,  
                                 filled=True, rounded=True,  
                                 special_characters=True)  
 graph = graphviz.Source(dot_data)  
 
-graph
+graph 
 # graph.render("iris")  run this to export this as a PDF file
 ```
 
 
 
 
-
+    
 ![svg](health-insurance.ipynb-files/output_37_0.svg)
-
+    
 
 
 

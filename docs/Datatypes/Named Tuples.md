@@ -1,7 +1,7 @@
 ---
 parent: Datatypes 
 title: Tuples 
-navorder: Named 
+nav_order: Named 
 ---
 
 like lists, but more conveninent, because I don't have to keep track at which index something is stored

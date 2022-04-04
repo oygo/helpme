@@ -1,7 +1,7 @@
 ---
 parent: Datatypes 
 title: - compare lists 
-navorder: Lists 
+nav_order: Lists 
 ---
 
 check if a list contains an entry

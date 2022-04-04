@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
-title: Wrange data 4 - Specific receipes 
-navorder: 1d4 
+title: Wrangle data 4 - Specific receipes 
+nav_order: 1d4 
 ---
 
 ### Undo one-hot enodings

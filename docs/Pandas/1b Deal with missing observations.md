@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Deal with missing observations 
-navorder: 1b 
+nav_order: 1b 
 ---
 
 ### Describe missing values in Pandas

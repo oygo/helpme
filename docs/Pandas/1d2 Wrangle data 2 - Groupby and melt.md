@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Wrangle data 2 - Groupby and melt 
-navorder: 1d2 
+nav_order: 1d2 
 ---
 
 ### Groupby

@@ -1,7 +1,7 @@
 ---
 parent: random notes 
 title:  - Lambda expressions 
-navorder: Functions 
+nav_order: Functions 
 ---
 
 ---

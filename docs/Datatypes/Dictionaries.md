@@ -1,7 +1,7 @@
 ---
 parent: Datatypes 
 title: Dictionaries 
-navorder: Dictionarie 
+nav_order: Dictionarie 
 ---
 
 A very nice general overview:

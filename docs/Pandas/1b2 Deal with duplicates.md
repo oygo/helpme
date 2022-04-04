@@ -1,6 +1,6 @@
 ---
 parent: Pandas 
 title: Deal with duplicates 
-navorder: 1b2 
+nav_order: 1b2 
 ---
 

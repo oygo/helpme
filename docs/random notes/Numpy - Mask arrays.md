@@ -1,7 +1,7 @@
 ---
 parent: random notes 
 title: - Mask arrays 
-navorder: Numpy 
+nav_order: Numpy 
 ---
 
 #python #numpy 

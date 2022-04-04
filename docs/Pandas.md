@@ -1,7 +1,7 @@
 ---
 has_children: true 
 title: Pandas 
-navorder: Panda 
+nav_order: Panda 
 ---
 
 ---

@@ -1,7 +1,7 @@
 ---
 parent: Pandas 
 title: Deal with dates and geodata 
-navorder: 0b 
+nav_order: 0b 
 ---
 
 # Dates and Geodata in Pandas

@@ -1,7 +1,7 @@
 ---
 parent: Datatypes 
 title:  - insert and take from lists 
-navorder: Lists 
+nav_order: Lists 
 ---
 
 Inserting and taking from lists
