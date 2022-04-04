@@ -1,6 +1,6 @@
 ---
 parent: Dealing with quirks
-grandparent: Pandas
+grand_parent: Pandas
 title: Deal with missing observations
 nav_order: 1b
 ---
