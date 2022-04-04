@@ -1,12 +1,12 @@
 ---
-parent: 1b dealing with quirks 
-title: Deal with missing observations 
-nav_order: 1b 
+parent: Dealing with quirks 
+title: Deal with missing observations
+nav_order: 1b
 ---
 
 ### Describe missing values in Pandas
 
-```python 
+```python
 # print for each column the number of observations which have missing values
 transaction_df.isna().sum()
 ```
@@ -17,10 +17,10 @@ transaction_df.isna().sum()
 ```python
 import missingno as msno
 import pandas as pd
-collisions = pd.read_csv("https://raw.githubusercontent.com/ResidentMario/missingno-data/master/nyc_collision_factors.csv") 
+collisions = pd.read_csv("https://raw.githubusercontent.com/ResidentMario/missingno-data/master/nyc_collision_factors.csv")
 
 # visualise the data as rows
-msno.matrix(collisions.sample(250)) # line 
+msno.matrix(collisions.sample(250)) # line
 
 # draw a bar chart, showing for each variable the number of missing observations
 msno.bar(collisions)
@@ -49,9 +49,9 @@ msno.dendrogram(collisions)
 	```python
 	df.fillna(df.mean())
 	```
-		
+
 	Example:
-		
+
 	```python
 	df = pd.DataFrame(np.random.randn(10,4))
 	df.iloc[3:5,0] = np.nan
@@ -60,7 +60,7 @@ msno.dendrogram(collisions)
 
 	df
 
-	df.fillna(df.mean(),inplace=True)	
+	df.fillna(df.mean(),inplace=True)
 	```
 
 
@@ -77,8 +77,8 @@ msno.dendrogram(collisions)
 			# create a variable equal 1 if the value is missing (for the given observation)
 			df[str(col)+'_isna'] = df[col].isnull().astype(int)
 	```
-	
-	
+
+
 ### Imputation to deal with missing data:
 
 Concepts:
@@ -89,4 +89,3 @@ Concepts:
 Book that I think we used at the IDinsight book club: https://stefvanbuuren.name/fimd/
 
 Imputation in scikit-learn; imputation in statsmodels
-
