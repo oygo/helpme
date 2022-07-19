@@ -5,7 +5,6 @@ nav_order: 0b
 ---
 
 # Dates and Geodata in Pandas
-```
 <details open markdown="block">
   <summary>
     Table of contents
@@ -14,7 +13,7 @@ nav_order: 0b
 1. TOC
 {:toc}
 </details>
-```
+
 
 ## Dealing with dates
 #### when loading data into Pandas, let it know that it is loading dates
