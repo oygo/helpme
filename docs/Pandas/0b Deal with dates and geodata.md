@@ -15,8 +15,9 @@ nav_order: 0b
 </details>
 
 
-## Dealing with dates
-#### when loading data into Pandas, let it know that it is loading dates
+# Dealing with dates
+### When loading into Pandas
+when loading data into Pandas, let it know that it is loading dates
 specify the date column when loading the csv and pandas deals with it
 ```python
 date_cols = ['pickup_datetime'] # specify which columns are dates
@@ -24,7 +25,8 @@ df = pd.read_csv("../input/new-york-city-taxi-fare-prediction/train.csv", parse_
 ```
 ---
 
-#### Retrospectively denote a column in Pandas as a date column. (= convert a column in Pandas into a `datetime` column)
+### Retrospectively
+Retrospectively denote a column in Pandas as a date column. (= convert a column in Pandas into a `datetime` column)
 
 `make_date()` uses the Pandas function `to_datetime()`, which can convert dates/datetimes (even when they are split across several columns) into a single `datetime` column; see the [Pandas manual](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#converting-to-timestamps) for more. 
 ```python
@@ -51,7 +53,7 @@ test_eq(df['pickup'].dtype, np.dtype('datetime64[ns]'))
 	
 ---
 
-#### Do some quick feature engineering to generate features (such as year, month, day, day of the week) from a date_time column
+### Do some quick feature engineering to generate features (such as year, month, day, day of the week) from a date_time column
 	
 fast.ai has the function [`add_datepart()`](https://docs.fast.ai/tabular.core.html#add_datepart), which generates additional features from the column and returns a dataframe with the added features
 ```python
@@ -70,16 +72,16 @@ List of time/date properties that can be accessed [here](https://pandas.pydata.o
 df['date_var'].dt.year
 ```
 
-#### Create a string variable (i.e. YYYY-MM) from a datetime
+### Create a string variable (i.e. YYYY-MM) from a datetime
 Use the function ``strftime()``. [see here](https://dfrieds.com/data-analysis/create-year-month-column.html)
 ```python	
 df['yearmonth'] = df['datetimevar'].dt.strftime('%Y-%m')
 ```
 	
-## Dealing with geodata
+# Dealing with geodata
 Use [Geopandas](https://geopandas.org/gallery/create_geopandas_from_pandas.html) to deal with geodata in Pandas dataframes
 
-#### Load a shapefile of NYC taxi zones as a (geo)dataframe, display it, and plot it.
+### Load a shapefile of NYC taxi zones as a (geo)dataframe, display it, and plot it.
 
 ```python
 # Load the zones
@@ -89,7 +91,7 @@ zones.drop('geometry', axis=1).sample(10)) # show the entire dataframe, excludin
 zones.plot() # plot the shapefile as a map
 ```
 
-#### Turn a Pandas dataframe (which includes GPS coordinates) into a geodataframe.
+### Turn a Pandas dataframe (which includes GPS coordinates) into a geodataframe.
 
 This makes the coordinates usable as geodata.
 
