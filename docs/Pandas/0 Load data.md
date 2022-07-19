@@ -5,7 +5,7 @@ title: Load data
 nav_order: 0 
 ---
 
-# Load data into Pandas
+Load data into Pandas
 
 ### from a CSV file
 

@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>0</title>
 <polygon fill="#f9e4d5" stroke="black" points="191.17,-336.5 12.17,-336.5 12.17,-268.5 191.17,-268.5 191.17,-336.5"/>
-<text text-anchor="start" x="53.17" y="-321.3" font-family="Times,serif" font-size="14.00">smoker â‰¤ 0.5</text>
+<text text-anchor="start" x="53.17" y="-321.3" font-family="Times,serif" font-size="14.00">smoker ≤ 0.5</text>
 <text text-anchor="start" x="20.17" y="-306.3" font-family="Times,serif" font-size="14.00">mse = 158689319.997</text>
 <text text-anchor="start" x="48.17" y="-291.3" font-family="Times,serif" font-size="14.00">samples = 649</text>
 <text text-anchor="start" x="33.67" y="-276.3" font-family="Times,serif" font-size="14.00">value = 13877.262</text>
@@ -22,7 +22,7 @@
 <g id="node2" class="node">
 <title>1</title>
 <polygon fill="#fdf3ec" stroke="black" points="431.67,-372.5 261.67,-372.5 261.67,-304.5 431.67,-304.5 431.67,-372.5"/>
-<text text-anchor="start" x="307.17" y="-357.3" font-family="Times,serif" font-size="14.00">age â‰¤ 42.5</text>
+<text text-anchor="start" x="307.17" y="-357.3" font-family="Times,serif" font-size="14.00">age ≤ 42.5</text>
 <text text-anchor="start" x="269.67" y="-342.3" font-family="Times,serif" font-size="14.00">mse = 37882887.086</text>
 <text text-anchor="start" x="293.17" y="-327.3" font-family="Times,serif" font-size="14.00">samples = 512</text>
 <text text-anchor="start" x="283.17" y="-312.3" font-family="Times,serif" font-size="14.00">value = 8601.652</text>
@@ -38,7 +38,7 @@
 <g id="node9" class="node">
 <title>8</title>
 <polygon fill="#eead7e" stroke="black" points="436.17,-245.5 257.17,-245.5 257.17,-177.5 436.17,-177.5 436.17,-245.5"/>
-<text text-anchor="start" x="297.67" y="-230.3" font-family="Times,serif" font-size="14.00">bmi â‰¤ 30.125</text>
+<text text-anchor="start" x="297.67" y="-230.3" font-family="Times,serif" font-size="14.00">bmi ≤ 30.125</text>
 <text text-anchor="start" x="265.17" y="-215.3" font-family="Times,serif" font-size="14.00">mse = 132127377.425</text>
 <text text-anchor="start" x="293.17" y="-200.3" font-family="Times,serif" font-size="14.00">samples = 137</text>
 <text text-anchor="start" x="278.67" y="-185.3" font-family="Times,serif" font-size="14.00">value = 32897.226</text>
@@ -54,7 +54,7 @@
 <g id="node3" class="node">
 <title>2</title>
 <polygon fill="#fefcfa" stroke="black" points="666.17,-486.5 505.17,-486.5 505.17,-418.5 666.17,-418.5 666.17,-486.5"/>
-<text text-anchor="start" x="534.17" y="-471.3" font-family="Times,serif" font-size="14.00">children â‰¤ 1.5</text>
+<text text-anchor="start" x="534.17" y="-471.3" font-family="Times,serif" font-size="14.00">children ≤ 1.5</text>
 <text text-anchor="start" x="513.17" y="-456.3" font-family="Times,serif" font-size="14.00">mse = 28469067.11</text>
 <text text-anchor="start" x="532.17" y="-441.3" font-family="Times,serif" font-size="14.00">samples = 288</text>
 <text text-anchor="start" x="522.17" y="-426.3" font-family="Times,serif" font-size="14.00">value = 5687.883</text>
@@ -69,7 +69,7 @@
 <g id="node6" class="node">
 <title>5</title>
 <polygon fill="#fae9dc" stroke="black" points="670.67,-372.5 500.67,-372.5 500.67,-304.5 670.67,-304.5 670.67,-372.5"/>
-<text text-anchor="start" x="546.17" y="-357.3" font-family="Times,serif" font-size="14.00">age â‰¤ 51.5</text>
+<text text-anchor="start" x="546.17" y="-357.3" font-family="Times,serif" font-size="14.00">age ≤ 51.5</text>
 <text text-anchor="start" x="508.67" y="-342.3" font-family="Times,serif" font-size="14.00">mse = 26221552.935</text>
 <text text-anchor="start" x="532.17" y="-327.3" font-family="Times,serif" font-size="14.00">samples = 224</text>
 <text text-anchor="start" x="517.67" y="-312.3" font-family="Times,serif" font-size="14.00">value = 12178.717</text>
@@ -140,7 +140,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <polygon fill="#f5ccaf" stroke="black" points="670.67,-245.5 500.67,-245.5 500.67,-177.5 670.67,-177.5 670.67,-245.5"/>
-<text text-anchor="start" x="546.17" y="-230.3" font-family="Times,serif" font-size="14.00">age â‰¤ 41.0</text>
+<text text-anchor="start" x="546.17" y="-230.3" font-family="Times,serif" font-size="14.00">age ≤ 41.0</text>
 <text text-anchor="start" x="508.67" y="-215.3" font-family="Times,serif" font-size="14.00">mse = 31536012.094</text>
 <text text-anchor="start" x="536.67" y="-200.3" font-family="Times,serif" font-size="14.00">samples = 66</text>
 <text text-anchor="start" x="517.67" y="-185.3" font-family="Times,serif" font-size="14.00">value = 22086.522</text>
@@ -155,7 +155,7 @@
 <g id="node13" class="node">
 <title>12</title>
 <polygon fill="#e99355" stroke="black" points="670.67,-131.5 500.67,-131.5 500.67,-63.5 670.67,-63.5 670.67,-131.5"/>
-<text text-anchor="start" x="546.17" y="-116.3" font-family="Times,serif" font-size="14.00">age â‰¤ 50.5</text>
+<text text-anchor="start" x="546.17" y="-116.3" font-family="Times,serif" font-size="14.00">age ≤ 50.5</text>
 <text text-anchor="start" x="508.67" y="-101.3" font-family="Times,serif" font-size="14.00">mse = 36261988.921</text>
 <text text-anchor="start" x="536.67" y="-86.3" font-family="Times,serif" font-size="14.00">samples = 71</text>
 <text text-anchor="start" x="517.67" y="-71.3" font-family="Times,serif" font-size="14.00">value = 41964.267</text>

@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>0</title>
 <path fill="#ffffff" stroke="black" d="M588.5,-663C588.5,-663 439.5,-663 439.5,-663 433.5,-663 427.5,-657 427.5,-651 427.5,-651 427.5,-592 427.5,-592 427.5,-586 433.5,-580 439.5,-580 439.5,-580 588.5,-580 588.5,-580 594.5,-580 600.5,-586 600.5,-592 600.5,-592 600.5,-651 600.5,-651 600.5,-657 594.5,-663 588.5,-663"/>
-<text text-anchor="start" x="435.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) â‰¤ 0.8</text>
+<text text-anchor="start" x="435.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) ≤ 0.8</text>
 <text text-anchor="start" x="470" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.667</text>
 <text text-anchor="start" x="461" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 150</text>
 <text text-anchor="start" x="443" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [50, 50, 50]</text>
@@ -39,7 +39,7 @@
 <g id="node3" class="node">
 <title>2</title>
 <path fill="#ffffff" stroke="black" d="M683,-544C683,-544 525,-544 525,-544 519,-544 513,-538 513,-532 513,-532 513,-473 513,-473 513,-467 519,-461 525,-461 525,-461 683,-461 683,-461 689,-461 695,-467 695,-473 695,-473 695,-532 695,-532 695,-538 689,-544 683,-544"/>
-<text text-anchor="start" x="521" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) â‰¤ 1.75</text>
+<text text-anchor="start" x="521" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) ≤ 1.75</text>
 <text text-anchor="start" x="569" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.5</text>
 <text text-anchor="start" x="551" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 100</text>
 <text text-anchor="start" x="537.5" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 50, 50]</text>
@@ -56,7 +56,7 @@
 <g id="node4" class="node">
 <title>3</title>
 <path fill="#4de88e" stroke="black" d="M557,-425C557,-425 393,-425 393,-425 387,-425 381,-419 381,-413 381,-413 381,-354 381,-354 381,-348 387,-342 393,-342 393,-342 557,-342 557,-342 563,-342 569,-348 569,-354 569,-354 569,-413 569,-413 569,-419 563,-425 557,-425"/>
-<text text-anchor="start" x="389" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) â‰¤ 4.95</text>
+<text text-anchor="start" x="389" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) ≤ 4.95</text>
 <text text-anchor="start" x="431" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.168</text>
 <text text-anchor="start" x="426.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 54</text>
 <text text-anchor="start" x="413" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 49, 5]</text>
@@ -72,7 +72,7 @@
 <g id="node13" class="node">
 <title>12</title>
 <path fill="#843de6" stroke="black" d="M815,-425C815,-425 651,-425 651,-425 645,-425 639,-419 639,-413 639,-413 639,-354 639,-354 639,-348 645,-342 651,-342 651,-342 815,-342 815,-342 821,-342 827,-348 827,-354 827,-354 827,-413 827,-413 827,-419 821,-425 815,-425"/>
-<text text-anchor="start" x="647" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) â‰¤ 4.85</text>
+<text text-anchor="start" x="647" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) ≤ 4.85</text>
 <text text-anchor="start" x="689" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.043</text>
 <text text-anchor="start" x="684.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 46</text>
 <text text-anchor="start" x="671" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 1, 45]</text>
@@ -88,7 +88,7 @@
 <g id="node5" class="node">
 <title>4</title>
 <path fill="#3de684" stroke="black" d="M303,-306C303,-306 145,-306 145,-306 139,-306 133,-300 133,-294 133,-294 133,-235 133,-235 133,-229 139,-223 145,-223 145,-223 303,-223 303,-223 309,-223 315,-229 315,-235 315,-235 315,-294 315,-294 315,-300 309,-306 303,-306"/>
-<text text-anchor="start" x="141" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) â‰¤ 1.65</text>
+<text text-anchor="start" x="141" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) ≤ 1.65</text>
 <text text-anchor="start" x="180" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.041</text>
 <text text-anchor="start" x="175.5" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 48</text>
 <text text-anchor="start" x="162" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 47, 1]</text>
@@ -104,7 +104,7 @@
 <g id="node8" class="node">
 <title>7</title>
 <path fill="#c09cf2" stroke="black" d="M554,-306C554,-306 396,-306 396,-306 390,-306 384,-300 384,-294 384,-294 384,-235 384,-235 384,-229 390,-223 396,-223 396,-223 554,-223 554,-223 560,-223 566,-229 566,-235 566,-235 566,-294 566,-294 566,-300 560,-306 554,-306"/>
-<text text-anchor="start" x="392" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) â‰¤ 1.55</text>
+<text text-anchor="start" x="392" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal width (cm) ≤ 1.55</text>
 <text text-anchor="start" x="431" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.444</text>
 <text text-anchor="start" x="431" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 6</text>
 <text text-anchor="start" x="417.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 2, 4]</text>
@@ -165,7 +165,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <path fill="#9cf2c0" stroke="black" d="M633,-187C633,-187 469,-187 469,-187 463,-187 457,-181 457,-175 457,-175 457,-116 457,-116 457,-110 463,-104 469,-104 469,-104 633,-104 633,-104 639,-104 645,-110 645,-116 645,-116 645,-175 645,-175 645,-181 639,-187 633,-187"/>
-<text text-anchor="start" x="465" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) â‰¤ 5.45</text>
+<text text-anchor="start" x="465" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00">petal length (cm) ≤ 5.45</text>
 <text text-anchor="start" x="507" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.444</text>
 <text text-anchor="start" x="507" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 3</text>
 <text text-anchor="start" x="493.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 2, 1]</text>
@@ -211,7 +211,7 @@
 <g id="node14" class="node">
 <title>13</title>
 <path fill="#c09cf2" stroke="black" d="M816.5,-306C816.5,-306 649.5,-306 649.5,-306 643.5,-306 637.5,-300 637.5,-294 637.5,-294 637.5,-235 637.5,-235 637.5,-229 643.5,-223 649.5,-223 649.5,-223 816.5,-223 816.5,-223 822.5,-223 828.5,-229 828.5,-235 828.5,-235 828.5,-294 828.5,-294 828.5,-300 822.5,-306 816.5,-306"/>
-<text text-anchor="start" x="645.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">sepal length (cm) â‰¤ 5.95</text>
+<text text-anchor="start" x="645.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00">sepal length (cm) ≤ 5.95</text>
 <text text-anchor="start" x="689" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00">gini = 0.444</text>
 <text text-anchor="start" x="689" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 3</text>
 <text text-anchor="start" x="675.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = [0, 1, 2]</text>

@@ -1,6 +1,6 @@
 ---
-parent: Dealing with quirks
-grand_parent: Pandas
-title: Deal with duplicates
-nav_order: 1b2
+parent: 1b dealing with quirks 
+title: Deal with duplicates 
+nav_order: 1b2 
 ---
+

@@ -1,8 +1,7 @@
 ---
-parent: Dealing with quirks
-grand_parent: Pandas
-title: Deal with missing rows
-nav_order: 5
+parent: 1b dealing with quirks 
+title: Deal with missing rows 
+nav_order: 1b4 
 ---
 
 - for some features, a row-complete dataset is required (i.e.) that has a row for every time and location.

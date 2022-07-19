@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>0</title>
 <path fill="#f9e0cf" stroke="black" d="M1526.5,-469C1526.5,-469 1371.5,-469 1371.5,-469 1365.5,-469 1359.5,-463 1359.5,-457 1359.5,-457 1359.5,-413 1359.5,-413 1359.5,-407 1365.5,-401 1371.5,-401 1371.5,-401 1526.5,-401 1526.5,-401 1532.5,-401 1538.5,-407 1538.5,-413 1538.5,-413 1538.5,-457 1538.5,-457 1538.5,-463 1532.5,-469 1526.5,-469"/>
-<text text-anchor="start" x="1401.5" y="-453.8" font-family="Helvetica,sans-Serif" font-size="14.00">smoker â‰¤ 0.5</text>
+<text text-anchor="start" x="1401.5" y="-453.8" font-family="Helvetica,sans-Serif" font-size="14.00">smoker ≤ 0.5</text>
 <text text-anchor="start" x="1367.5" y="-438.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 146214284.621</text>
 <text text-anchor="start" x="1396" y="-423.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 654</text>
 <text text-anchor="start" x="1381" y="-408.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 13461.165</text>
@@ -22,7 +22,7 @@
 <g id="node2" class="node">
 <title>1</title>
 <path fill="#fbeee4" stroke="black" d="M1166,-365C1166,-365 1020,-365 1020,-365 1014,-365 1008,-359 1008,-353 1008,-353 1008,-309 1008,-309 1008,-303 1014,-297 1020,-297 1020,-297 1166,-297 1166,-297 1172,-297 1178,-303 1178,-309 1178,-309 1178,-353 1178,-353 1178,-359 1172,-365 1166,-365"/>
-<text text-anchor="start" x="1053.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 42.5</text>
+<text text-anchor="start" x="1053.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 42.5</text>
 <text text-anchor="start" x="1016" y="-334.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 39949726.123</text>
 <text text-anchor="start" x="1040" y="-319.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 522</text>
 <text text-anchor="start" x="1029.5" y="-304.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 8728.108</text>
@@ -38,7 +38,7 @@
 <g id="node17" class="node">
 <title>16</title>
 <path fill="#eeab7b" stroke="black" d="M1884.5,-365C1884.5,-365 1729.5,-365 1729.5,-365 1723.5,-365 1717.5,-359 1717.5,-353 1717.5,-353 1717.5,-309 1717.5,-309 1717.5,-303 1723.5,-297 1729.5,-297 1729.5,-297 1884.5,-297 1884.5,-297 1890.5,-297 1896.5,-303 1896.5,-309 1896.5,-309 1896.5,-353 1896.5,-353 1896.5,-359 1890.5,-365 1884.5,-365"/>
-<text text-anchor="start" x="1767.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi â‰¤ 30.1</text>
+<text text-anchor="start" x="1767.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi ≤ 30.1</text>
 <text text-anchor="start" x="1725.5" y="-334.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 120941974.578</text>
 <text text-anchor="start" x="1754" y="-319.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 132</text>
 <text text-anchor="start" x="1739" y="-304.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 32506.624</text>
@@ -54,7 +54,7 @@
 <g id="node3" class="node">
 <title>2</title>
 <path fill="#fef9f6" stroke="black" d="M604,-261C604,-261 458,-261 458,-261 452,-261 446,-255 446,-249 446,-249 446,-205 446,-205 446,-199 452,-193 458,-193 458,-193 604,-193 604,-193 610,-193 616,-199 616,-205 616,-205 616,-249 616,-249 616,-255 610,-261 604,-261"/>
-<text text-anchor="start" x="491.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 26.5</text>
+<text text-anchor="start" x="491.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 26.5</text>
 <text text-anchor="start" x="454" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 15448773.426</text>
 <text text-anchor="start" x="478" y="-215.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 273</text>
 <text text-anchor="start" x="467.5" y="-200.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 4704.334</text>
@@ -69,7 +69,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <path fill="#f9e2d2" stroke="black" d="M1166,-261C1166,-261 1020,-261 1020,-261 1014,-261 1008,-255 1008,-249 1008,-249 1008,-205 1008,-205 1008,-199 1014,-193 1020,-193 1020,-193 1166,-193 1166,-193 1172,-193 1178,-199 1178,-205 1178,-205 1178,-249 1178,-249 1178,-255 1172,-261 1166,-261"/>
-<text text-anchor="start" x="1053.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 58.5</text>
+<text text-anchor="start" x="1053.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 58.5</text>
 <text text-anchor="start" x="1016" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 31297353.204</text>
 <text text-anchor="start" x="1040" y="-215.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 249</text>
 <text text-anchor="start" x="1025" y="-200.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 12878.231</text>
@@ -84,7 +84,7 @@
 <g id="node4" class="node">
 <title>3</title>
 <path fill="#fffefd" stroke="black" d="M323.5,-157C323.5,-157 186.5,-157 186.5,-157 180.5,-157 174.5,-151 174.5,-145 174.5,-145 174.5,-101 174.5,-101 174.5,-95 180.5,-89 186.5,-89 186.5,-89 323.5,-89 323.5,-89 329.5,-89 335.5,-95 335.5,-101 335.5,-101 335.5,-145 335.5,-145 335.5,-151 329.5,-157 323.5,-157"/>
-<text text-anchor="start" x="215.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 23.5</text>
+<text text-anchor="start" x="215.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 23.5</text>
 <text text-anchor="start" x="182.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 8804844.401</text>
 <text text-anchor="start" x="202" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 131</text>
 <text text-anchor="start" x="191.5" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 2922.816</text>
@@ -99,7 +99,7 @@
 <g id="node7" class="node">
 <title>6</title>
 <path fill="#fdf4ee" stroke="black" d="M604,-157C604,-157 458,-157 458,-157 452,-157 446,-151 446,-145 446,-145 446,-101 446,-101 446,-95 452,-89 458,-89 458,-89 604,-89 604,-89 610,-89 616,-95 616,-101 616,-101 616,-145 616,-145 616,-151 610,-157 604,-157"/>
-<text text-anchor="start" x="491.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 32.5</text>
+<text text-anchor="start" x="491.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 32.5</text>
 <text text-anchor="start" x="454" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 15784620.542</text>
 <text text-anchor="start" x="478" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 142</text>
 <text text-anchor="start" x="467.5" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 6460.994</text>
@@ -170,7 +170,7 @@
 <g id="node11" class="node">
 <title>10</title>
 <path fill="#fae5d6" stroke="black" d="M1072,-157C1072,-157 926,-157 926,-157 920,-157 914,-151 914,-145 914,-145 914,-101 914,-101 914,-95 920,-89 926,-89 926,-89 1072,-89 1072,-89 1078,-89 1084,-95 1084,-101 1084,-101 1084,-145 1084,-145 1084,-151 1078,-157 1072,-157"/>
-<text text-anchor="start" x="959.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 51.5</text>
+<text text-anchor="start" x="959.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 51.5</text>
 <text text-anchor="start" x="922" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 29918598.674</text>
 <text text-anchor="start" x="946" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 189</text>
 <text text-anchor="start" x="931" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 11989.148</text>
@@ -185,7 +185,7 @@
 <g id="node14" class="node">
 <title>13</title>
 <path fill="#f8dbc6" stroke="black" d="M1260,-157C1260,-157 1114,-157 1114,-157 1108,-157 1102,-151 1102,-145 1102,-145 1102,-101 1102,-101 1102,-95 1108,-89 1114,-89 1114,-89 1260,-89 1260,-89 1266,-89 1272,-95 1272,-101 1272,-101 1272,-145 1272,-145 1272,-151 1266,-157 1260,-157"/>
-<text text-anchor="start" x="1137" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">children â‰¤ 3.5</text>
+<text text-anchor="start" x="1137" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">children ≤ 3.5</text>
 <text text-anchor="start" x="1110" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 26027605.656</text>
 <text text-anchor="start" x="1138.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 60</text>
 <text text-anchor="start" x="1119" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 15528.381</text>
@@ -256,7 +256,7 @@
 <g id="node18" class="node">
 <title>17</title>
 <path fill="#f4c9ab" stroke="black" d="M1880,-261C1880,-261 1734,-261 1734,-261 1728,-261 1722,-255 1722,-249 1722,-249 1722,-205 1722,-205 1722,-199 1728,-193 1734,-193 1734,-193 1880,-193 1880,-193 1886,-193 1892,-199 1892,-205 1892,-205 1892,-249 1892,-249 1892,-255 1886,-261 1880,-261"/>
-<text text-anchor="start" x="1767.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 41.0</text>
+<text text-anchor="start" x="1767.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 41.0</text>
 <text text-anchor="start" x="1730" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 27615588.309</text>
 <text text-anchor="start" x="1758.5" y="-215.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 64</text>
 <text text-anchor="start" x="1739" y="-200.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 21690.547</text>
@@ -271,7 +271,7 @@
 <g id="node25" class="node">
 <title>24</title>
 <path fill="#e89254" stroke="black" d="M2416,-261C2416,-261 2270,-261 2270,-261 2264,-261 2258,-255 2258,-249 2258,-249 2258,-205 2258,-205 2258,-199 2264,-193 2270,-193 2270,-193 2416,-193 2416,-193 2422,-193 2428,-199 2428,-205 2428,-205 2428,-249 2428,-249 2428,-255 2422,-261 2416,-261"/>
-<text text-anchor="start" x="2303.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 50.5</text>
+<text text-anchor="start" x="2303.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 50.5</text>
 <text text-anchor="start" x="2266" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 19983037.904</text>
 <text text-anchor="start" x="2294.5" y="-215.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 68</text>
 <text text-anchor="start" x="2275" y="-200.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 41520.021</text>
@@ -286,7 +286,7 @@
 <g id="node19" class="node">
 <title>18</title>
 <path fill="#f6d3ba" stroke="black" d="M1783.5,-157C1783.5,-157 1646.5,-157 1646.5,-157 1640.5,-157 1634.5,-151 1634.5,-145 1634.5,-145 1634.5,-101 1634.5,-101 1634.5,-95 1640.5,-89 1646.5,-89 1646.5,-89 1783.5,-89 1783.5,-89 1789.5,-89 1795.5,-95 1795.5,-101 1795.5,-101 1795.5,-145 1795.5,-145 1795.5,-151 1789.5,-157 1783.5,-157"/>
-<text text-anchor="start" x="1675.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 29.5</text>
+<text text-anchor="start" x="1675.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 29.5</text>
 <text text-anchor="start" x="1642.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 9798687.889</text>
 <text text-anchor="start" x="1666.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 33</text>
 <text text-anchor="start" x="1647" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 18213.314</text>
@@ -301,7 +301,7 @@
 <g id="node22" class="node">
 <title>21</title>
 <path fill="#f2c09b" stroke="black" d="M1972,-157C1972,-157 1826,-157 1826,-157 1820,-157 1814,-151 1814,-145 1814,-145 1814,-101 1814,-101 1814,-95 1820,-89 1826,-89 1826,-89 1972,-89 1972,-89 1978,-89 1984,-95 1984,-101 1984,-101 1984,-145 1984,-145 1984,-151 1978,-157 1972,-157"/>
-<text text-anchor="start" x="1850.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi â‰¤ 25.955</text>
+<text text-anchor="start" x="1850.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi ≤ 25.955</text>
 <text text-anchor="start" x="1822" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 20852028.493</text>
 <text text-anchor="start" x="1850.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 31</text>
 <text text-anchor="start" x="1831" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 25241.763</text>
@@ -372,7 +372,7 @@
 <g id="node26" class="node">
 <title>25</title>
 <path fill="#e9975b" stroke="black" d="M2416,-157C2416,-157 2270,-157 2270,-157 2264,-157 2258,-151 2258,-145 2258,-145 2258,-101 2258,-101 2258,-95 2264,-89 2270,-89 2270,-89 2416,-89 2416,-89 2422,-89 2428,-95 2428,-101 2428,-101 2428,-145 2428,-145 2428,-151 2422,-157 2416,-157"/>
-<text text-anchor="start" x="2299" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi â‰¤ 37.93</text>
+<text text-anchor="start" x="2299" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">bmi ≤ 37.93</text>
 <text text-anchor="start" x="2266" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 14072775.893</text>
 <text text-anchor="start" x="2294.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 52</text>
 <text text-anchor="start" x="2275" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 39782.229</text>
@@ -387,7 +387,7 @@
 <g id="node29" class="node">
 <title>28</title>
 <path fill="#e6843e" stroke="black" d="M2680.5,-157C2680.5,-157 2543.5,-157 2543.5,-157 2537.5,-157 2531.5,-151 2531.5,-145 2531.5,-145 2531.5,-101 2531.5,-101 2531.5,-95 2537.5,-89 2543.5,-89 2543.5,-89 2680.5,-89 2680.5,-89 2686.5,-89 2692.5,-95 2692.5,-101 2692.5,-101 2692.5,-145 2692.5,-145 2692.5,-151 2686.5,-157 2680.5,-157"/>
-<text text-anchor="start" x="2572.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age â‰¤ 56.0</text>
+<text text-anchor="start" x="2572.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00">age ≤ 56.0</text>
 <text text-anchor="start" x="2539.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00">mse = 4399821.556</text>
 <text text-anchor="start" x="2563.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00">samples = 16</text>
 <text text-anchor="start" x="2544" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00">value = 46385.838</text>
