@@ -16,7 +16,7 @@ nav_order: 0b
 
 
 # Dealing with dates
-### When loading into Pandas
+## When loading into Pandas
 when loading data into Pandas, let it know that it is loading dates
 specify the date column when loading the csv and pandas deals with it
 ```python
@@ -25,7 +25,7 @@ df = pd.read_csv("../input/new-york-city-taxi-fare-prediction/train.csv", parse_
 ```
 ---
 
-### Retrospectively
+## Retrospectively
 Retrospectively denote a column in Pandas as a date column. (= convert a column in Pandas into a `datetime` column)
 
 `make_date()` uses the Pandas function `to_datetime()`, which can convert dates/datetimes (even when they are split across several columns) into a single `datetime` column; see the [Pandas manual](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#converting-to-timestamps) for more. 
@@ -53,7 +53,7 @@ test_eq(df['pickup'].dtype, np.dtype('datetime64[ns]'))
 	
 ---
 
-### Do some quick feature engineering to generate features (such as year, month, day, day of the week) from a date_time column
+## Do some quick feature engineering to generate features (such as year, month, day, day of the week) from a date_time column
 	
 fast.ai has the function [`add_datepart()`](https://docs.fast.ai/tabular.core.html#add_datepart), which generates additional features from the column and returns a dataframe with the added features
 ```python
@@ -65,14 +65,14 @@ it also drops the original column, so if you want to keep it, you need to feed a
 
 ---
 	
-### Access/extract properties such as the year, hours,etc) from a Pandas Timestamp 
+## Access/extract properties such as the year, hours,etc) from a Pandas Timestamp 
 Use the [dt.accessor](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#dt-accessor). 
 List of time/date properties that can be accessed [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#time-date-components)
 ```python
 df['date_var'].dt.year
 ```
 
-### Create a string variable (i.e. YYYY-MM) from a datetime
+## Create a string variable (i.e. YYYY-MM) from a datetime
 Use the function ``strftime()``. [see here](https://dfrieds.com/data-analysis/create-year-month-column.html)
 ```python	
 df['yearmonth'] = df['datetimevar'].dt.strftime('%Y-%m')
@@ -81,7 +81,7 @@ df['yearmonth'] = df['datetimevar'].dt.strftime('%Y-%m')
 # Dealing with geodata
 Use [Geopandas](https://geopandas.org/gallery/create_geopandas_from_pandas.html) to deal with geodata in Pandas dataframes
 
-### Load a shapefile of NYC taxi zones as a (geo)dataframe, display it, and plot it.
+## Load a shapefile of NYC taxi zones as a (geo)dataframe, display it, and plot it.
 
 ```python
 # Load the zones
@@ -97,6 +97,7 @@ This makes the coordinates usable as geodata.
 
 Determine for each taxi ride which NYC taxi zone the ride starts in by performing a spatial join with the zone data.
 
+#### EXAMPLE
 ```python
 # PICKUPS:
 gdf_pickup = gpd.GeoDataFrame( # create a geodataframe with the GPS coordinates of pickups
