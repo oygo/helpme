@@ -1,10 +1,19 @@
 ---
 parent: Pandas 
 title: Describe and explore dataset 
-nav_order: 2 
+nav_order: 2a 
 ---
 
 # Describe and explore a dataset
+{: .no_toc } 
+<details open markdown="block"> 
+  <summary> 
+    Table of contents 
+  </summary> 
+  {: .text-delta } 
+1. TOC 
+{:toc} 
+</details> 
 
 ## Standard commands for describing a dataset
 - ``df.info()`` displays size of dataset (MB, # rows, # cols)
@@ -32,7 +41,7 @@ df.describe(include='all').T
 use the option `datetime_is_numeric=True` to also display mean, min, and max (and percentiles) for the date variable
 
 ## Describe missing values
-see [this page ](1b%20Missing%20values.md) in how to deal with quirks
+see in how to deal with quirks
 
 
 ## Describe an individual variable

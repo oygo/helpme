@@ -4,7 +4,7 @@ title: Wrangle data 2 - Groupby and melt
 nav_order: 2d2 
 ---
 
-# Wrangle 2: Reshape (group, melt, etc.)
+# Wrangle 2: Reshape with group, melt, etc.
 
 {: .no_toc } 
 <details open markdown="block"> 
@@ -14,7 +14,7 @@ nav_order: 2d2
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 
 ## Groupby
 see [here](https://dfrieds.com/data-analysis/groupby-python-pandas.html) for a nice writeup

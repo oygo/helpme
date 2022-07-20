@@ -13,7 +13,7 @@ nav_order: 2d3
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 
 ## append: [pd.concat](https://pandas.pydata.org/docs/user_guide/merging.html#concatenating-objects)
 

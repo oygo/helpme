@@ -13,7 +13,7 @@ nav_order: 1a
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 
 ## from a CSV file
 ```python

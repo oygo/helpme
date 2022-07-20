@@ -13,7 +13,7 @@ nav_order: 1b
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 
 # Dealing with dates
 ## When loading into Pandas

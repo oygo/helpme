@@ -4,7 +4,7 @@ title: Wrangle data 4 - Specific receipes
 nav_order: 2d4 
 ---
 
-# Specific Receipes
+# Wrangle 4: Specific Receipes
 {: .no_toc } 
 <details open markdown="block"> 
   <summary> 
@@ -13,7 +13,7 @@ nav_order: 2d4
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 
 ## Undo one-hot enodings
 see Costa Rica 1 on Kaggle

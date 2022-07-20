@@ -1,8 +1,8 @@
 ---
-parent: 2b Dealing with quirks
-grand_parent: Pandas
-title: Categorical data
-nav_order: 1b3
+parent: 2b Dealing with quirks 
+grand_parent: Pandas 
+title: Categorical data 
+nav_order: 2b3 
 ---
 
 

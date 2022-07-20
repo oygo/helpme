@@ -38,7 +38,8 @@ Options:
 Further points:
 - seaborn allows to separately specify what is displayed on the lower triangle, the diagonal, and the upper triagonal. 
 For example, this allows: a scatterplot on the lower triangle, histogram of the variable on the diagonal, and a kernel density plot on the upper triangle. For this seaborn has the ``pairgrid``, which is a class that does not automatically fill the grid, but allows to subsequently specify what's displayed. See on [Medium](https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166) (just before the conclusion) and the [Seaborn manual](https://seaborn.pydata.org/generated/seaborn.pairplot.html) for an explanation
-```python
+
+``` python
 # Create an instance of the PairGrid class.  
 grid = sns.PairGrid(data= penguins, vars = ['bill_depth_mm', 'flipper_length_mm', 'body_mass_g'], size = 3)
 

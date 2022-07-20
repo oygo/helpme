@@ -1,6 +1,6 @@
 ---
 parent: Pandas 
-title: Wrangle data 1 - Single rows, columns, or indices 
+title: Wrangle data 1 - Single columns, rows, indices 
 nav_order: 2d1 
 ---
 
@@ -13,7 +13,7 @@ nav_order: 2d1
   {: .text-delta } 
 1. TOC 
 {:toc} 
-</details>] 
+</details> 
 # Columns
 
 ## Drop columns
