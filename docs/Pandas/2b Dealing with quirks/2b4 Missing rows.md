@@ -1,5 +1,5 @@
 ---
-parent: 2b Dealing with quirks 
+parent: Dealing with quirks 
 grand_parent: Pandas 
 title: Missing rows 
 nav_order: 2b4 

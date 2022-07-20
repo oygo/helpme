@@ -1,5 +1,6 @@
 ---
-parent: random notes 
+parent: notes 
+grand_parent: random notes 
 title: - Building a website with Jekyll and Jupyter Notebooks 
 nav_order: Website 
 ---

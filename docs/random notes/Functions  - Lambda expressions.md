@@ -1,5 +1,6 @@
 ---
-parent: random notes 
+parent: notes 
+grand_parent: random notes 
 title:  - Lambda expressions 
 nav_order: Functions 
 ---

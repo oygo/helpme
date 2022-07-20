@@ -16,7 +16,7 @@ nav_order: 2d2
 {:toc} 
 </details> 
 
-## Groupby
+# Groupby
 see [here](https://dfrieds.com/data-analysis/groupby-python-pandas.html) for a nice writeup
 
 ```python
@@ -62,9 +62,9 @@ df_agg
 the resulting dataframe here will hve a double 
 
 
-## Melt
+# Melt
 
 
-## Stack, unstack
+# Stack, unstack
 
-## Pivot
+# Pivot

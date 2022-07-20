@@ -1,5 +1,6 @@
 ---
-parent: Machine Learning 
+parent: Learning 
+grand_parent: Machine Learning 
 title: index 
 nav_order: inde 
 ---
