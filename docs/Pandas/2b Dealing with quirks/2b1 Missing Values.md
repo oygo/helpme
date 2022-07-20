@@ -1,7 +1,7 @@
 ---
 parent: Dealing with quirks 
 grand_parent: Pandas 
-title: Missing Values.ipynb 
+title: Missing Values 
 nav_order: 2b1 
 ---
 
@@ -81,19 +81,12 @@ df.isna().sum()
 
 ```python
 # Plot them
-df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
+df.isna().sum().plot.bar(); # the equivalent command in missingno is msno.bar(df)
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](2b1 Missing Values.ipynb-files/output_5_1.png)
+![png](2b1 Missing Values.ipynb-files/output_5_0.png)
     
 
 
@@ -296,55 +289,34 @@ df[['BuildingArea', 'YearBuilt', 'Car', 'CouncilArea']].describe(include='all')
 
 ```python
 # Visualise the data as rows, this is great for seeing patterns
-msno.matrix(df.sample(250))
+msno.matrix(df.sample(250));
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](2b1 Missing Values.ipynb-files/output_12_1.png)
+![png](2b1 Missing Values.ipynb-files/output_12_0.png)
     
 
 
 
 ```python
-msno.dendrogram(df)
+msno.dendrogram(df);
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](2b1 Missing Values.ipynb-files/output_13_1.png)
+![png](2b1 Missing Values.ipynb-files/output_13_0.png)
     
 
 
 
 ```python
-msno.heatmap(df)
+msno.heatmap(df);
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](2b1 Missing Values.ipynb-files/output_14_1.png)
+![png](2b1 Missing Values.ipynb-files/output_14_0.png)
     
 
 

@@ -1,6 +1,6 @@
 ---
-title: health-insurance.ipynb 
-nav_order: health-insurance.ipyn 
+title: health-insurance 
+nav_order: health-insuranc 
 ---
 
 ```python
