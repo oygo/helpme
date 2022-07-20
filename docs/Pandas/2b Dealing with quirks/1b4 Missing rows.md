@@ -1,6 +1,6 @@
 ---
-parent: 1b dealing with quirks 
-title: Deal with missing rows 
+parent: 2b Dealing with quirks 
+title: Missing rows 
 nav_order: 1b4 
 ---
 

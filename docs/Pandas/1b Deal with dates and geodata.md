@@ -1,21 +1,19 @@
 ---
 parent: Pandas 
 title: Deal with dates and geodata 
-nav_order: 0b 
+nav_order: 1b 
 ---
 
 # Dates and Geodata in Pandas
-
-{: .no_toc }
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
+{: .no_toc } 
+<details open markdown="block"> 
+  <summary> 
+    Table of contents 
+  </summary> 
+  {: .text-delta } 
+1. TOC 
+{:toc} 
+</details>] 
 
 # Dealing with dates
 ## When loading into Pandas
@@ -55,7 +53,7 @@ test_eq(df['pickup'].dtype, np.dtype('datetime64[ns]'))
 	
 ---
 
-## Do some quick feature engineering to generate features (such as year, month, day, day of the week) from a date_time column
+## Automatically generate features (i.e. year, month, day, day of the week) from a timestamp
 	
 fast.ai has the function [`add_datepart()`](https://docs.fast.ai/tabular.core.html#add_datepart), which generates additional features from the column and returns a dataframe with the added features
 ```python
@@ -67,13 +65,13 @@ it also drops the original column, so if you want to keep it, you need to feed a
 
 ---
 	
-## Access/extract properties such as the year, hours,etc) from a Pandas Timestamp 
+## Access/extract properties (i.e. year, day, hour) from a Pandas Timestamp 
 Use the [dt.accessor](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#dt-accessor). 
 List of time/date properties that can be accessed [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#time-date-components)
 ```python
 df['date_var'].dt.year
 ```
-
+---
 ## Create a string variable (i.e. YYYY-MM) from a datetime
 Use the function ``strftime()``. [see here](https://dfrieds.com/data-analysis/create-year-month-column.html)
 ```python	
@@ -93,7 +91,7 @@ zones.drop('geometry', axis=1).sample(10)) # show the entire dataframe, excludin
 zones.plot() # plot the shapefile as a map
 ```
 
-### Turn a Pandas dataframe (which includes GPS coordinates) into a geodataframe.
+## Turn a Pandas dataframe (which includes GPS coordinates) into a geodataframe.
 
 This makes the coordinates usable as geodata.
 

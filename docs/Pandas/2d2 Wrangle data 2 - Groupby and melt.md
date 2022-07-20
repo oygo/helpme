@@ -1,10 +1,22 @@
 ---
 parent: Pandas 
 title: Wrangle data 2 - Groupby and melt 
-nav_order: 1d2 
+nav_order: 2d2 
 ---
 
-### Groupby
+# Wrangle 2: Reshape (group, melt, etc.)
+
+{: .no_toc } 
+<details open markdown="block"> 
+  <summary> 
+    Table of contents 
+  </summary> 
+  {: .text-delta } 
+1. TOC 
+{:toc} 
+</details>] 
+
+## Groupby
 see [here](https://dfrieds.com/data-analysis/groupby-python-pandas.html) for a nice writeup
 
 ```python
@@ -50,9 +62,9 @@ df_agg
 the resulting dataframe here will hve a double 
 
 
-### Melt
+## Melt
 
 
-### Stack, unstack
+## Stack, unstack
 
-### Pivot
+## Pivot

@@ -1,19 +1,29 @@
 ---
 parent: Pandas 
 title: Wrangle data 1 - Single rows, columns, or indices 
-nav_order: 1d1 
+nav_order: 2d1 
 ---
 
+# Wrangle 1: columns, rows, indices
+{: .no_toc } 
+<details open markdown="block"> 
+  <summary> 
+    Table of contents 
+  </summary> 
+  {: .text-delta } 
+1. TOC 
+{:toc} 
+</details>] 
 # Columns
 
-### Drop columns
+## Drop columns
 ``` python 
 df.drop(['B', 'C'], axis=1) 
 df.drop(columns=['B', 'C']) # alternative approach
 ```
 [SX](https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe?rq=1)
 
-### Change order of columns 
+## Change order of columns 
 - the easiest way is to reassign the dataframe, specifying the desired order of columns. 
 - example: move the column 'mean' to the front (spelling out all column names)
 	```python
@@ -31,7 +41,7 @@ df = df[['idhogar','Id']+rest]	# reorder the dataframe
 ```
 - [Stackexchange](https://stackoverflow.com/questions/13148429/how-to-change-the-order-of-dataframe-columns):
 
-### Rename columns
+## Rename columns
 ```python
 df.rename(columns={'Old Name': 'New Name'}, inplace=True)
 ```
@@ -43,7 +53,7 @@ df = pd.DataFrame(list)
 df.rename(columns={0:'Numbers'})
 ```
 
-### Creating new columns
+## Creating new columns
 - using Boolean expressions
 	caveat: when creating new columns using boolean expressions on existing columns, the operators `&` and `|` need to be used (instead of `and` and `or`), and each expression needs to be individual brackes [SX](https://stackoverflow.com/questions/36921951/truth-value-of-a-series-is-ambiguous-use-a-empty-a-bool-a-item-a-any-o)
 	
@@ -53,7 +63,7 @@ df.rename(columns={0:'Numbers'})
 
 - using apply
 
-### Dealing with hierarchical columns/hierarchical column indices
+## Dealing with hierarchical columns/hierarchical column indices
 Example:
 ```python
 import seaborn as sns
@@ -76,7 +86,7 @@ Approach [2](https://stackoverflow.com/questions/14507794/pandas-how-to-flatten-
 df_grouped.columns = df_grouped.columns.get_level_values(0)
 ```
 
-### Replace values in a column
+## Replace values in a column
 this is also useful for fixing weird encodings, i.e. when a dataframe is not consistently labelled, i.e. when in the same column 'no' is encoded sometimes as 'no' and sometimes as '0'
 ```python
 df_train.edjefe.replace('no', 0 , inplace=True) # replace one value
@@ -84,19 +94,19 @@ df_train.edjefe.replace({'no': 0, 'yes': 1}, inplace=True) # replace several val
 ```
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html
 
-### Iterate over columns:
+## Iterate over columns:
 ``pd.DataFrame.items()``
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.items.html
 
 # Rows
-### Drop rows:
+## Drop rows:
 - by condition:
 	- Nutshell: select the rows using a condition (can also use a apply/map function to select the rows)
 	- [SX](https://stackoverflow.com/questions/13851535/how-to-delete-rows-from-a-pandas-dataframe-based-on-a-conditional-expression), answers 1 and 2 are great
 - by location:
 	- [SX1](https://stackoverflow.com/questions/15703283/pandas-drop-a-range-of-rows-from-df), [SX2](https://stackoverflow.com/questions/14661701/how-to-drop-a-list-of-rows-from-pandas-dataframe), [SX3](https://stackoverflow.com/questions/50974845/dropping-rows-in-pandas-with-index)
 
-### Add a row:
+## Add a row:
 simply add an index to the dataframe: [Medium](https://towardsdatascience.com/introduction-to-pandas-apply-applymap-and-map-5d3e044e93ff)
 ```python
 # setup
@@ -110,17 +120,17 @@ df = pd.DataFrame({ 'A': [1,2,3,4],
 df.loc['Row 5'] = df.apply(lambda x:x.sum(), axis=0)
 ```
 
-### Iterate over rows
+## Iterate over rows
 ``pd.DataFrame.iterrows``
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iterrows.html#pandas.DataFrame.iterrows
 
-### Show specific row(s)
+## Show specific row(s)
 ```python
 print(df.iloc[[]])
 ```
 https://stackoverflow.com/questions/43772362/how-to-print-a-specific-row-of-a-pandas-dataframe
 
-### Create a row-complete dataset (i.e. that has an every hour and every location, even when this pair didn't occur in the original data)  
+## Create a row-complete dataset (i.e. that has an every hour and every location, even when this pair didn't occur in the original data)  
 Situation:
 - dataset of taxi rides in each zone during each hour (created by collapsing a dataset of individual taxi rides)
 - some zones have no rides during a given hour

@@ -1,6 +1,6 @@
 ---
-parent: 1b dealing with quirks 
-title: Deal with categorical data 
+parent: 2b Dealing with quirks 
+title: Categorical data 
 nav_order: 1b3 
 ---
 

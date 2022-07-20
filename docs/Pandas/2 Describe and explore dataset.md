@@ -1,19 +1,22 @@
 ---
 parent: Pandas 
 title: Describe and explore dataset 
-nav_order: 1 
+nav_order: 2 
 ---
 
-``df.info()`` displays size of dataset (MB, # rows, # cols)
-``df.head(5)`` display the top 5 rows; ``df.tail(5)`` for the bottom 5
-``df.sample(10)`` display 10 sample rows
-``df.columns`` displays the name of colums
-``df.dtypes`` displays datatypes for all columns
-``df.describe()`` describes all variables in the dataset (see below)
-``df.series.value_counts()`` tabulate a series
+# Describe and explore a dataset
 
-### Display summary statistics for a dataset
+## Standard commands for describing a dataset
+- ``df.info()`` displays size of dataset (MB, # rows, # cols)
+- ``df.head(5)`` display the top 5 rows; ``df.tail(5)`` for the bottom 5
+- ``df.sample(10)`` display 10 sample rows
+- ``df.columns`` displays the name of colums
+- ``df.dtypes`` displays datatypes for all columns
+- ``df.describe()`` describes all variables in the dataset (see below)
+- ``df.series.value_counts()`` tabulate a series
 
+
+## Display summary statistics for a dataset
 define a function `display_all(df)`, which does not limit the number of lines that it shows
 ```python
 def display_all(df):
@@ -28,11 +31,11 @@ df.describe(include='all').T
 
 use the option `datetime_is_numeric=True` to also display mean, min, and max (and percentiles) for the date variable
 
-### Describe missing values
-see [[Pandas - 1b Deal with missing observations]]
+## Describe missing values
+see [this page ](1b%20Missing%20values.md) in how to deal with quirks
 
 
-### Describe an individual variable
+## Describe an individual variable
 - graph it ([Pandas manual](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html#))
 	```python
 	df.variable.plot() # plots the series (and index) as a line plot
@@ -52,4 +55,4 @@ df.variable.value_counts().sort_index() # sort by value
 ```
 
 
-### Calculate summary statistics (by groups)
+## Calculate summary statistics (by groups)

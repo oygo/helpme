@@ -1,12 +1,10 @@
 ---
-has_children: true 
 parent: Pandas 
 title: Load data 
-nav_order: 0a 
+nav_order: 1a 
 ---
 
 # Load data into Pandas
-
 {: .no_toc } 
 <details open markdown="block"> 
   <summary> 
@@ -18,13 +16,15 @@ nav_order: 0a
 </details>] 
 
 ## from a CSV file
-
 ```python
 df = pd.read_csv("../input/new-york-city-taxi-fare-prediction/train.csv")
 ```
 
-### **For files stored on github:** to load a CSV file that's stored on Github, append ``?raw=true`` to the URL. 
-Example: https://github.com/nguyen-toan/ISLR/blob/master/dataset/Advertising.csv isn't actually the URL to the file, but is a Github homepage previewing the file. 	https://github.com/nguyen-toan/ISLR/blob/master/dataset/Advertising.csv?raw=true is the actual file. [see here](https://stackoverflow.com/questions/55240330/how-to-read-csv-file-from-github-using-pandas)
+### Directly load files stored on github:
+To load a CSV file that's stored on Github, simply append ``?raw=true`` to the URL. 
+Example: 
+- https://github.com/nguyen-toan/ISLR/blob/master/dataset/Advertising.csv isn't actually the URL to the file, but is a Github homepage previewing the file. 	
+- https://github.com/nguyen-toan/ISLR/blob/master/dataset/Advertising.csv?raw=true is the actual file. [see here](https://stackoverflow.com/questions/55240330/how-to-read-csv-file-from-github-using-pandas)
 
 ### How to deal with dates
 specify the date column when loading the csv and pandas deals with it
@@ -77,14 +77,12 @@ df2.info(verbose=True)
 
 
 ## from an Excel file
-
 ```python
 df = dataframe = pd.read_excel(url, sheetname=0, header=1)
 ```
 
 
 ## from a SQL database
-
 ``` python
 # Load libraries
 import pandas as pd
@@ -97,9 +95,8 @@ dataframe = pd.read_sql_query('SELECT * FROM data', database_connection)
 dataframe.head(2)
 ```
 
-## using Google Big Query
+## from Google Big Query
 
 
-## from an R file:
-Pyreadr seems to be the go-to Python library
-https://github.com/ofajardo/pyreadr
+## from an R file
+[Pyreadr](https://github.com/ofajardo/pyreadr) seems to be the go-to Python library

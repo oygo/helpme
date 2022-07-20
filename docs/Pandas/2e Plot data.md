@@ -1,12 +1,12 @@
 ---
 parent: Pandas 
 title: Plot data 
-nav_order: 1e 
+nav_order: 2e 
 ---
 
-For exploration
+# Plot data for exploration
 
-### Pairwise plot of data
+## Pairwise plot of data
 Quick approach: use [seaborn.pairplot](https://seaborn.pydata.org/generated/seaborn.pairplot.html)
 ```python
 import seaborn as sns
@@ -52,7 +52,7 @@ grid = grid.map_lower(sns.kdeplot, cmap = 'Reds')
 ```
 
 
-### Visualise activity in a calendar:  Github-style heatmap
+## Visualise activity in a calendar:  Github-style heatmap
 
 [calplot](https://calplot.readthedocs.io/en/latest/) (also [here](https://github.com/tomkwok/calplot)) creates a Github-style calendar showing activity. As input calplot takes a Pandas **series** (of events), which has a datetime index. 
 

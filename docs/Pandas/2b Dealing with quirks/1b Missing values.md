@@ -1,9 +1,10 @@
 ---
-parent: 1b dealing with quirks 
-title: Deal with missing observations 
+parent: 2b Dealing with quirks 
+title: Missing values 
 nav_order: 1b 
 ---
 
+# Missing values
 ### Describe missing values in Pandas
 
 ```python 
@@ -11,7 +12,7 @@ nav_order: 1b
 transaction_df.isna().sum()
 ```
 
-### Visualise missing values
+## Visualise missing values
 [missingo](https://github.com/ResidentMario/missingno) is a module to visualise data completeness and missing variables easily
 
 ```python
@@ -37,7 +38,7 @@ msno.dendrogram(collisions)
 
 
 
-### Deal with missing values: fill them using pandas.fillna()
+## Deal with missing values: fill them using pandas.fillna()
 
 1. fill just one column
 	```python
@@ -79,7 +80,7 @@ msno.dendrogram(collisions)
 	```
 	
 	
-### Imputation to deal with missing data:
+## Imputation to deal with missing data:
 
 Concepts:
 - Conceptual frameworks: missing at random, missing conditionally at random, not missing at random

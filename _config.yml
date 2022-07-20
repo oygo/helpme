@@ -35,6 +35,9 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
 
+# make the ordering of pages case-insensitive: https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/#ordering-pages
+nav_sort: case_insensitive
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

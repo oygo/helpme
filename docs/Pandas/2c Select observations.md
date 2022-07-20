@@ -1,10 +1,12 @@
 ---
 parent: Pandas 
 title: Select observations 
-nav_order: 1c 
+nav_order: 2c 
 ---
 
-Indexing
+# Select observations
+
+## Indexing
 ```python
 # Example dataset
 df = pd.DataFrame(
@@ -20,7 +22,7 @@ df
 
 ```
 
-### Boolean indexing:
+## Boolean indexing:
 ```python 
 # filter by one criterion
 df[df['A']=='foo']
@@ -36,8 +38,8 @@ df[[x.startswith('t') for x in df['B']]] # second appraoch: using a list compreh
 
 ```
 
-##### using where 
+**using where**
 Boolean indexing returns a subset of the data: 
 to guarantee that the output has the same shape as the original data, the [where()](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#the-where-method-and-masking) method can be used. This returns a true/false mask of the size of the original dataset.
 
-##### using isin
+**using isin**
