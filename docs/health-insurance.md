@@ -342,7 +342,7 @@ plt.plot([metrics.r2_score(y_val, np.mean(preds[:i+1], axis=0)) for i in range(1
 
 
     
-![png](health-insurance.ipynb-files/output_18_0.png)
+![png](health-insurance.md-files/output_18_0.png)
     
 
 
@@ -491,7 +491,7 @@ draw_tree(m2.estimators_[4], df_tra.drop(['charges'], axis=1), precision=3)
 
 
     
-![svg](health-insurance.ipynb-files/output_29_0.svg)
+![svg](health-insurance.md-files/output_29_0.svg)
     
 
 
@@ -560,7 +560,7 @@ graph
 
 
     
-![svg](health-insurance.ipynb-files/output_34_0.svg)
+![svg](health-insurance.md-files/output_34_0.svg)
     
 
 
@@ -595,7 +595,7 @@ graph
 
 
     
-![svg](health-insurance.ipynb-files/output_37_0.svg)
+![svg](health-insurance.md-files/output_37_0.svg)
     
 
 

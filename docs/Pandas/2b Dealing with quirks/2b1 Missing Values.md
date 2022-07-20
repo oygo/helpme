@@ -86,7 +86,7 @@ df.isna().sum().plot.bar(); # the equivalent command in missingno is msno.bar(df
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_5_0.png)
+![png](2b1 Missing Values.md-files/output_5_0.png)
     
 
 
@@ -294,7 +294,7 @@ msno.matrix(df.sample(250));
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_12_0.png)
+![png](2b1 Missing Values.md-files/output_12_0.png)
     
 
 
@@ -305,7 +305,7 @@ msno.dendrogram(df);
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_13_0.png)
+![png](2b1 Missing Values.md-files/output_13_0.png)
     
 
 
@@ -316,7 +316,7 @@ msno.heatmap(df);
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_14_0.png)
+![png](2b1 Missing Values.md-files/output_14_0.png)
     
 
 
