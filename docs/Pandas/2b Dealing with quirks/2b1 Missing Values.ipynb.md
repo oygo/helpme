@@ -55,10 +55,81 @@ df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
 ```
 
 
+
+
+    Unnamed: 0           0
+    Suburb               0
+    Address              0
+    Rooms                0
+    Type                 0
+    Price                0
+    Method               0
+    SellerG              0
+    Date                 0
+    Distance             1
+    Postcode             1
+    Bedroom2          3469
+    Bathroom          3471
+    Car               3576
+    Landsize          4793
+    BuildingArea     10634
+    YearBuilt         9438
+    CouncilArea       6163
+    Lattitude         3332
+    Longtitude        3332
+    Regionname           1
+    Propertycount        1
+    dtype: int64
+
+
+
+
+
+
+    <AxesSubplot:>
+
+
+
+
+    
+![png](2b1 Missing Values.ipynb-files/output_4_2.png)
+    
+
+
+
 ```python
 # Show which variables have missing values
 df.isna().sum()>0
 ```
+
+
+
+
+    Unnamed: 0       False
+    Suburb           False
+    Address          False
+    Rooms            False
+    Type             False
+    Price            False
+    Method           False
+    SellerG          False
+    Date             False
+    Distance          True
+    Postcode          True
+    Bedroom2          True
+    Bathroom          True
+    Car               True
+    Landsize          True
+    BuildingArea      True
+    YearBuilt         True
+    CouncilArea       True
+    Lattitude         True
+    Longtitude        True
+    Regionname        True
+    Propertycount     True
+    dtype: bool
+
+
 
 
 ```python
@@ -66,6 +137,16 @@ df.isna().sum()>0
 has_miss = df.isna().sum()>0
 has_miss.index[has_miss] # exactly equivalent to df.columns[has_miss]
 ```
+
+
+
+
+    Index(['Distance', 'Postcode', 'Bedroom2', 'Bathroom', 'Car', 'Landsize',
+           'BuildingArea', 'YearBuilt', 'CouncilArea', 'Lattitude', 'Longtitude',
+           'Regionname', 'Propertycount'],
+          dtype='object')
+
+
 
 The first line is exactly the same as above. has_miss is a boolean array.
 
@@ -80,11 +161,132 @@ df.columns[has_miss]
 ```
 
 
+
+
+    Index(['Distance', 'Postcode', 'Bedroom2', 'Bathroom', 'Car', 'Landsize',
+           'BuildingArea', 'YearBuilt', 'CouncilArea', 'Lattitude', 'Longtitude',
+           'Regionname', 'Propertycount'],
+          dtype='object')
+
+
+
+
 ```python
 # Describe some of the variables which have missing values
 df[['BuildingArea', 'YearBuilt', 'Car', 'CouncilArea']].describe(include='all')
 # df[list(df.columns[has_miss])].describe(include='all') # to describe all
 ```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BuildingArea</th>
+      <th>YearBuilt</th>
+      <th>Car</th>
+      <th>CouncilArea</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>7762.000000</td>
+      <td>8958.000000</td>
+      <td>14820.000000</td>
+      <td>12233</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Moreland</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1163</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>151.220219</td>
+      <td>1965.879996</td>
+      <td>1.615520</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>519.188596</td>
+      <td>37.013261</td>
+      <td>0.955916</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>1196.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>93.000000</td>
+      <td>1950.000000</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>126.000000</td>
+      <td>1970.000000</td>
+      <td>2.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>174.000000</td>
+      <td>2000.000000</td>
+      <td>2.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>44515.000000</td>
+      <td>2018.000000</td>
+      <td>10.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 ## Visualise missing variables
 
@@ -97,10 +299,49 @@ msno.matrix(df.sample(250))
 ```
 
 
+
+
+    <AxesSubplot:>
+
+
+
+
+    
+![png](2b1 Missing Values.ipynb-files/output_11_1.png)
+    
+
+
+
 ```python
 msno.dendrogram(df)
 msno.heatmap(df)
 ```
+
+
+
+
+    <AxesSubplot:>
+
+
+
+
+
+
+    <AxesSubplot:>
+
+
+
+
+    
+![png](2b1 Missing Values.ipynb-files/output_12_2.png)
+    
+
+
+
+    
+![png](2b1 Missing Values.ipynb-files/output_12_3.png)
+    
+
 
 missingno can be [further configured](https://github.com/ResidentMario/missingno/blob/master/CONFIGURATION.md)
 
@@ -145,6 +386,326 @@ for col in usemedian: # median
 # fill all (remaining) columns
 df.fillna(df.mean())
 ```
+
+    /opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:2: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+      
+    
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Suburb</th>
+      <th>Address</th>
+      <th>Rooms</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Method</th>
+      <th>SellerG</th>
+      <th>Date</th>
+      <th>Distance</th>
+      <th>...</th>
+      <th>Bathroom_isna</th>
+      <th>Car_isna</th>
+      <th>Landsize_isna</th>
+      <th>BuildingArea_isna</th>
+      <th>YearBuilt_isna</th>
+      <th>CouncilArea_isna</th>
+      <th>Lattitude_isna</th>
+      <th>Longtitude_isna</th>
+      <th>Regionname_isna</th>
+      <th>Propertycount_isna</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Abbotsford</td>
+      <td>85 Turner St</td>
+      <td>2</td>
+      <td>h</td>
+      <td>1480000.0</td>
+      <td>S</td>
+      <td>Biggin</td>
+      <td>3/12/2016</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Abbotsford</td>
+      <td>25 Bloomburg St</td>
+      <td>2</td>
+      <td>h</td>
+      <td>1035000.0</td>
+      <td>S</td>
+      <td>Biggin</td>
+      <td>4/02/2016</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>Abbotsford</td>
+      <td>5 Charles St</td>
+      <td>3</td>
+      <td>h</td>
+      <td>1465000.0</td>
+      <td>SP</td>
+      <td>Biggin</td>
+      <td>4/03/2017</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5</td>
+      <td>Abbotsford</td>
+      <td>40 Federation La</td>
+      <td>3</td>
+      <td>h</td>
+      <td>850000.0</td>
+      <td>PI</td>
+      <td>Biggin</td>
+      <td>4/03/2017</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6</td>
+      <td>Abbotsford</td>
+      <td>55a Park St</td>
+      <td>4</td>
+      <td>h</td>
+      <td>1600000.0</td>
+      <td>VB</td>
+      <td>Nelson</td>
+      <td>4/06/2016</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>18391</th>
+      <td>23540</td>
+      <td>Williamstown</td>
+      <td>8/2 Thompson St</td>
+      <td>2</td>
+      <td>t</td>
+      <td>622500.0</td>
+      <td>SP</td>
+      <td>Greg</td>
+      <td>26/08/2017</td>
+      <td>6.8</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18392</th>
+      <td>23541</td>
+      <td>Williamstown</td>
+      <td>96 Verdon St</td>
+      <td>4</td>
+      <td>h</td>
+      <td>2500000.0</td>
+      <td>PI</td>
+      <td>Sweeney</td>
+      <td>26/08/2017</td>
+      <td>6.8</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18393</th>
+      <td>23544</td>
+      <td>Yallambie</td>
+      <td>17 Amaroo Wy</td>
+      <td>4</td>
+      <td>h</td>
+      <td>1100000.0</td>
+      <td>S</td>
+      <td>Buckingham</td>
+      <td>26/08/2017</td>
+      <td>12.7</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18394</th>
+      <td>23545</td>
+      <td>Yarraville</td>
+      <td>6 Agnes St</td>
+      <td>4</td>
+      <td>h</td>
+      <td>1285000.0</td>
+      <td>SP</td>
+      <td>Village</td>
+      <td>26/08/2017</td>
+      <td>6.3</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18395</th>
+      <td>23546</td>
+      <td>Yarraville</td>
+      <td>33 Freeman St</td>
+      <td>4</td>
+      <td>h</td>
+      <td>1050000.0</td>
+      <td>VB</td>
+      <td>Village</td>
+      <td>26/08/2017</td>
+      <td>6.3</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>18396 rows × 35 columns</p>
+</div>
+
+
 
 #### Thinking more about imputation
 
