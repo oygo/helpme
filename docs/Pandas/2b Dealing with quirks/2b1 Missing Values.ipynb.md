@@ -29,10 +29,6 @@ In this notebook:
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import missingno as msno
-
-# Show multiple output per cell
-from IPython.core.interactiveshell import InteractiveShell
-InteractiveShell.ast_node_interactivity = "all"
 ```
 
 
@@ -51,7 +47,6 @@ On working with missing values in Pandas, see the [Pandas tutorial](https://pand
 ```python
 # Count missing values
 df.isna().sum()
-df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
 ```
 
 
@@ -84,6 +79,12 @@ df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
 
 
 
+```python
+# Plot them
+df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
+```
+
+
 
 
     <AxesSubplot:>
@@ -92,7 +93,7 @@ df.isna().sum().plot.bar() # the equivalent command in missingno is msno.bar(df)
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_4_2.png)
+![png](2b1 Missing Values.ipynb-files/output_5_1.png)
     
 
 
@@ -307,13 +308,30 @@ msno.matrix(df.sample(250))
 
 
     
-![png](2b1 Missing Values.ipynb-files/output_11_1.png)
+![png](2b1 Missing Values.ipynb-files/output_12_1.png)
     
 
 
 
 ```python
 msno.dendrogram(df)
+```
+
+
+
+
+    <AxesSubplot:>
+
+
+
+
+    
+![png](2b1 Missing Values.ipynb-files/output_13_1.png)
+    
+
+
+
+```python
 msno.heatmap(df)
 ```
 
@@ -325,21 +343,8 @@ msno.heatmap(df)
 
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](2b1 Missing Values.ipynb-files/output_12_2.png)
-    
-
-
-
-    
-![png](2b1 Missing Values.ipynb-files/output_12_3.png)
+![png](2b1 Missing Values.ipynb-files/output_14_1.png)
     
 
 
@@ -384,328 +389,12 @@ for col in usemedian: # median
 
 ```python
 # fill all (remaining) columns
-df.fillna(df.mean())
+df.fillna(df.mean(), inplace=True)
 ```
 
     /opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:2: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
       
     
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>Suburb</th>
-      <th>Address</th>
-      <th>Rooms</th>
-      <th>Type</th>
-      <th>Price</th>
-      <th>Method</th>
-      <th>SellerG</th>
-      <th>Date</th>
-      <th>Distance</th>
-      <th>...</th>
-      <th>Bathroom_isna</th>
-      <th>Car_isna</th>
-      <th>Landsize_isna</th>
-      <th>BuildingArea_isna</th>
-      <th>YearBuilt_isna</th>
-      <th>CouncilArea_isna</th>
-      <th>Lattitude_isna</th>
-      <th>Longtitude_isna</th>
-      <th>Regionname_isna</th>
-      <th>Propertycount_isna</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>Abbotsford</td>
-      <td>85 Turner St</td>
-      <td>2</td>
-      <td>h</td>
-      <td>1480000.0</td>
-      <td>S</td>
-      <td>Biggin</td>
-      <td>3/12/2016</td>
-      <td>2.5</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>Abbotsford</td>
-      <td>25 Bloomburg St</td>
-      <td>2</td>
-      <td>h</td>
-      <td>1035000.0</td>
-      <td>S</td>
-      <td>Biggin</td>
-      <td>4/02/2016</td>
-      <td>2.5</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4</td>
-      <td>Abbotsford</td>
-      <td>5 Charles St</td>
-      <td>3</td>
-      <td>h</td>
-      <td>1465000.0</td>
-      <td>SP</td>
-      <td>Biggin</td>
-      <td>4/03/2017</td>
-      <td>2.5</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>5</td>
-      <td>Abbotsford</td>
-      <td>40 Federation La</td>
-      <td>3</td>
-      <td>h</td>
-      <td>850000.0</td>
-      <td>PI</td>
-      <td>Biggin</td>
-      <td>4/03/2017</td>
-      <td>2.5</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6</td>
-      <td>Abbotsford</td>
-      <td>55a Park St</td>
-      <td>4</td>
-      <td>h</td>
-      <td>1600000.0</td>
-      <td>VB</td>
-      <td>Nelson</td>
-      <td>4/06/2016</td>
-      <td>2.5</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>18391</th>
-      <td>23540</td>
-      <td>Williamstown</td>
-      <td>8/2 Thompson St</td>
-      <td>2</td>
-      <td>t</td>
-      <td>622500.0</td>
-      <td>SP</td>
-      <td>Greg</td>
-      <td>26/08/2017</td>
-      <td>6.8</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18392</th>
-      <td>23541</td>
-      <td>Williamstown</td>
-      <td>96 Verdon St</td>
-      <td>4</td>
-      <td>h</td>
-      <td>2500000.0</td>
-      <td>PI</td>
-      <td>Sweeney</td>
-      <td>26/08/2017</td>
-      <td>6.8</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18393</th>
-      <td>23544</td>
-      <td>Yallambie</td>
-      <td>17 Amaroo Wy</td>
-      <td>4</td>
-      <td>h</td>
-      <td>1100000.0</td>
-      <td>S</td>
-      <td>Buckingham</td>
-      <td>26/08/2017</td>
-      <td>12.7</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18394</th>
-      <td>23545</td>
-      <td>Yarraville</td>
-      <td>6 Agnes St</td>
-      <td>4</td>
-      <td>h</td>
-      <td>1285000.0</td>
-      <td>SP</td>
-      <td>Village</td>
-      <td>26/08/2017</td>
-      <td>6.3</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18395</th>
-      <td>23546</td>
-      <td>Yarraville</td>
-      <td>33 Freeman St</td>
-      <td>4</td>
-      <td>h</td>
-      <td>1050000.0</td>
-      <td>VB</td>
-      <td>Village</td>
-      <td>26/08/2017</td>
-      <td>6.3</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>18396 rows × 35 columns</p>
-</div>
-
-
 
 #### Thinking more about imputation
 
