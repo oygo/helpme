@@ -5,6 +5,8 @@ nav_order: 0b
 ---
 
 # Dates and Geodata in Pandas
+
+{: .no_toc }
 <details open markdown="block">
   <summary>
     Table of contents
