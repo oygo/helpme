@@ -32,6 +32,7 @@ df.drop(columns=['B', 'C']) # alternative approach
 
 to get a list of columns use: ``df.columns.tolist()`` *(this can avoid having to type out all the column names in larger dataframes)*
 - example: move the columns 'HH_id' and 'ind_id' to the front (without having to spell out all the column names)
+
 ```python
 rest = df.columns.tolist() # get a list of all column names
 rest.remove('HH_id')       # remove the two column names from the list

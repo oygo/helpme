@@ -15,7 +15,7 @@ nav_order: 2d4
 {:toc} 
 </details> 
 
-## Undo one-hot enodings
+## Undo one-hot encodings
 see Costa Rica 1 on Kaggle
 
 ## Reshape from wide to long

@@ -49,7 +49,7 @@ from fastai.tabular.all import *
 make_date(taxis, 'pickup')
 # check that it worked
 test_eq(df['pickup'].dtype, np.dtype('datetime64[ns]'))
-	```
+```
 	
 ---
 
