@@ -63,6 +63,7 @@ df.rename(columns={0:'Numbers'})
 	```
 
 - using apply
+- using insert []
 
 ## Dealing with hierarchical columns/hierarchical column indices
 Example:
